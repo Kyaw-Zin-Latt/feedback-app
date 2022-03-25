@@ -15,6 +15,12 @@ function App() {
         setDarkMode(false)
     }
 
+    const handleFeedback = (id) => {
+        if (window.confirm("Are you sure to delete?")) {
+            setFeedback(feedback.filter((item) => item.id != id ))
+        }
+    }
+
     return (
 
         <div className="container-fluid">
@@ -37,7 +43,7 @@ function App() {
             <div className="row justify-content-center" style={{ backgroundColor: '#0e0e0e' }}>
                 <div className="col-12 col-md-8">
 
-                    <FeedbackList feedbacks={feedback} darkMode={darkMode} />
+                    <FeedbackList handleDelete={handleFeedback} feedbacks={feedback} darkMode={darkMode} />
                 </div>
             </div>
         </div>

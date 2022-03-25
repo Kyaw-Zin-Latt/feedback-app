@@ -5,12 +5,12 @@ const FeedbackData = [
         text : "Min Ga LarPar",
     },
     {
-        id : 3,
+        id : 2,
         rating : 4,
         text : "Min Ga Lar React",
     },
     {
-        id : 1,
+        id : 3,
         rating : 6,
         text : "Min Ga React is Good",
     },
